@@ -24,7 +24,7 @@ terraform {
 }
 
 provider "aws" {
-   region = "us-east-2"
+  region = "us-east-2"
 }
 
 data "aws_ami" "amazon-linux-ami" {
@@ -38,7 +38,7 @@ data "aws_ami" "amazon-linux-ami" {
 }
 
 resource "aws_vpc" "main" {
-  cidr_block       = "10.40.0.0/16"
+  cidr_block = "10.40.0.0/16"
 
   tags = {
     Name = "Test-VPC"
