@@ -10,7 +10,7 @@ env:
 
 jobs:
   terraform:
-    if: github.repository != 'hashicorp-education/aws-armageddonted-tfe
+    if: github.repository != 'hashicorp-education/aws-armageddonted-tfe'
     name: "Terraform Plan"
     runs-on: ubuntu-latest
     permissions:
